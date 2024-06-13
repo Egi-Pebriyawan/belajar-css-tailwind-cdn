@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind CSS Via CDN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font API GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- Custom config value untuk tailwind bisa spacing dll -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1 class="text-4xl text-center font-bold bg-orange-300 m-2 p-2">Belajar CSS Tailwind CDN</h1>
+    <section class="bg-indigo-300">
+      <h2 class="text-center font-semibold">1. Spacing</h2>
+      <div class="bg-slate-200 mb-4 p-4 text-center">1.1 Margin</div>
+      <div class="p-4 text-center">1.2 Padding</div>
+    </section>
+
+    <section class="mt-5 bg-red-300">
+      <h2 class="text-center mb-10 bg-green-300">2. Sizing</h2>
+      <div class="w-20 h-20 bg-yellow-200">Kotak 1</div>
+    </section>
+
+    <section class="text-center font-bold mt-5">3. Belajar Typography Tailwind CSS</section>
+    <div class="bg-red-200">
+      <div class="bg-yellow-200 px-3 italic hover:bg-green-300">By Egi Pebriyawan 13 Juni 2024</div>
+      <p class="font-inter px-3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit error, incidunt facilis dolor unde, quia explicabo fuga enim autem eaque eos soluta harum qui vel dolores ipsa deserunt asperiores. Necessitatibus!
+      </p>
+    </div>
+  </body>
+</html>
